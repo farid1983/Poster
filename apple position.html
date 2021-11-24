@@ -1,0 +1,161 @@
+<html>
+
+<head>
+    <!-- purpose to control the browser -->
+    <title>Farid Website || HomePage</title>
+
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            /* to make eliminate all gaps */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            /* * is a all selector */
+        }
+
+        div#container {
+            width: 100%;
+            height: 100%;
+            background-color: orange;
+        }
+
+        div#header {
+            width: 100%;
+            height: 100px;
+            background-color: gray;
+        }
+
+        div#content {
+            width: 900px;
+            height: 100px;
+            background-color: blue;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            box-sizing: border-box;
+        }
+
+        div#content h1 {
+            /* will style h1 inside the content */
+            float: left;
+        }
+
+        div#content nav {
+            /* will style nav inside the content */
+            float: right;
+            ;
+        }
+
+        div#content ul {
+            list-style-type: none;
+        }
+
+        div#content li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        div#banner {
+            width: 100%;
+            height: 600px;
+            background-color: lightblue;
+        }
+
+        div#contentbanner {
+            width: 900px;
+            height: inherit;
+            background-color: darkmagenta;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            box-sizing: border-box;
+            color: white;
+        }
+
+        div#product {
+            width: 100%;
+            height: 300px;
+            background-color: bisque;
+        }
+
+        div.item {
+            width: 50%;
+            height: inherit;
+            background-color: brown;
+            border-width: 2px;
+            border-color: yellow;
+            border-style: solid;
+            box-sizing: border-box;
+            float: left;
+            text-align: center;
+            line-height: 300px;
+            /* optionally can replace line-height with padding */
+
+        }
+    </style>
+
+
+
+</head>
+
+
+<body>
+
+    <!-- everything in the body will be displayed in the browser -->
+    <div id="container">
+
+        <div id="header">
+
+            <div id="content">
+                <h1>Apple Malaysia</h1>
+                <nav>
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Work</li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+
+        <!-- header end here........................................ -->
+
+        <div id="banner">
+
+            <div id="contentbanner">
+                <h1>Holiday for everyone</h1>
+                <p>Buy Iphone now.</p>
+            </div>
+
+        </div>
+
+        <!-- banner end here......................................... -->
+
+        <div id="product">
+
+            <div class="item">
+                <h1>RM999.00</h1>
+            </div>
+
+            <div class="item">
+                <h1>RM1999.00</h1>
+            </div>
+
+        </div>
+
+</body>
+
+</html>
