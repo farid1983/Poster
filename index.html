@@ -22,6 +22,7 @@
             /* background-size: 30px;
             background-repeat: no-repeat; */
             position: relative;
+            z-index: 6;
         }
 
         h1#title {
@@ -96,6 +97,16 @@
             font-family: cursive;
             font-size: 60px;
         }
+
+        div#line1 {
+            width: 200px;
+            height: 1035px;
+            background-color: white;
+            position: absolute;
+            left: 802px;
+            top: 10px;
+            z-index: 5;
+        }
     </style>
 
 </head>
@@ -120,6 +131,8 @@
         <div>
             <h1 id="headline">HEADLINE</h1>
         </div>
+
+        <div id="line1"></div>
     </div>
 
 </body>
