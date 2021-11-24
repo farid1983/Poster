@@ -9,8 +9,6 @@
             padding: 0;
         }
 
-
-
         div#container {
             width: 800px;
             height: 1035px;
@@ -26,50 +24,63 @@
             position: relative;
         }
 
-
-        div#box1 {
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            position: absolute;
-            left: 50px;
-            top: 50px;
-            z-index: 2;
-        }
-
-        div#box2 {
-            width: 100px;
-            height: 100px;
-            background-color: blue;
-            position: absolute;
-            left: 180px;
-            top: 345px;
-            z-index: 5;
-            /* highest no will be infront */
-        }
-
-        div#box3 {
-            width: 100px;
-            height: 100px;
-            background-color: yellow;
-            position: absolute;
-            left: 100px;
-            top: 300px;
-        }
-
         h1#title {
             position: absolute;
             left: 100px;
             top: 300px;
         }
 
-        div#line1 {
+        div#hex1 {
             width: 300px;
-            height: 10px;
-            background-color: yellow;
+            height: 173.21px;
+            background-color: #64C7CC;
             position: absolute;
-            left: 200px;
-            top: 80px;
+            transform: rotate(45deg);
+            left: 1800px;
+            top: 280px;
+            margin: 86.60px 0;
+        }
+
+        div#hex2 {
+            width: 300px;
+            height: 173.21px;
+            background-color: #64C7CC;
+            position: absolute;
+            transform: rotate(45deg)scale(0.8);
+            left: 2000px;
+            top: 500px;
+            margin: 86.60px 0;
+        }
+
+        div#hex3 {
+            width: 300px;
+            height: 173.21px;
+            background-color: #64C7CC;
+            position: absolute;
+            transform: rotate(45deg) scale(1.5);
+            left: 2000px;
+            top: 0px;
+            margin: 86.60px 0;
+        }
+
+        .hexagon:before,
+        .hexagon:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            border-left: 150px solid transparent;
+            border-right: 150px solid transparent;
+        }
+
+        .hexagon:before {
+            bottom: 100%;
+            border-bottom: 86.60px solid #64C7CC;
+        }
+
+        .hexagon:after {
+            top: 100%;
+            width: 0;
+            border-top: 86.60px solid #64C7CC;
         }
     </style>
 
@@ -78,12 +89,20 @@
 <body>
 
     <div id="container">
-        <div id="box1"></div>
+        <!-- <div id="box1"></div>
         <div id="box2"></div>
         <div id="box3"></div>
         <h1 id="title">Enjoy your coffe</h1>
-        <div id="line1"></div>
+        <div id="line1"></div> -->
+
     </div>
+
+    <div id="hex1" class="hexagon"></div>
+    <div id="hex2" class="hexagon"></div>
+    <div id="hex3" class="hexagon"></div>
+
+
+
 </body>
 
 </html>
